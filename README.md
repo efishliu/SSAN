@@ -1,6 +1,13 @@
 # SSAN
 Self-Supervised Signed Graph Attention Network for Social Recommendation 论文源码
 
+### 主要工作
+* 我们提出了一种用于社交推荐 SSAN 的自监督签名图注意网络框架，通过引入用户的态度来构建高阶社交签名网络和自监督任务来聚合社交信息。
+* 我们研究了签名网络在社交推荐中的作用，并设计了一种基于 LightGCN 和平衡理论的图卷积方法来聚合混合社交关系的图信息。
+* 受社会理论的启发，我们设计了两个自监督信号来学习具有语义信息的社交图结构，并将自监督任务作为辅助任务集成到统一的推荐框架中。
+* 实验结果证明了 SSAN 在几个真实数据集上的有效性。
+
+### 源码介绍
 SSAN 基于开源推荐代码QRec二次开发，核心的代码模块为：[SSAN](./SSAN/model/ranking/SSAN.py)  
 配置文件：[SSAN.conf](./SSAN/config/SSAN.conf)
 
